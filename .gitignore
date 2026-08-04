@@ -1,0 +1,20 @@
+# Dependencies / OS
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Env & local
+.env
+.env.*
+!.env.example
+
+# Editors
+.vscode/
+.idea/
+
+# Vercel
+.vercel
+
+# Logs
+*.log
+npm-debug.log*
