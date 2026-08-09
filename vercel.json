@@ -1,16 +1,6 @@
 {
   "cleanUrls": true,
-  "trailingSlash": true,
-  "redirects": [
-    { "source": "/about", "destination": "/", "permanent": true },
-    { "source": "/about/", "destination": "/", "permanent": true },
-    { "source": "/contact", "destination": "/#contact", "permanent": true },
-    { "source": "/contact/", "destination": "/#contact", "permanent": true },
-    { "source": "/publications", "destination": "/", "permanent": true },
-    { "source": "/publications/", "destination": "/", "permanent": true },
-    { "source": "/business-info", "destination": "/", "permanent": true },
-    { "source": "/business-info/", "destination": "/", "permanent": true }
-  ],
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/(.*)",
