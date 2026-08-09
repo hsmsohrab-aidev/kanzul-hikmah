@@ -149,41 +149,18 @@
   var hero = document.querySelector(".hero");
   if (hero) {
     var tl = gsap.timeline({ defaults: { ease: "power2.out" } });
-    var rays = hero.querySelectorAll(".shamsa-ray");
-    rays.forEach(function (ray) {
-      var len = 0;
-      try {
-        len = ray.getTotalLength();
-      } catch (err) {
-        len = 80;
-      }
-      gsap.set(ray, { strokeDasharray: len, strokeDashoffset: len });
-    });
-
-    tl.to(rays, { strokeDashoffset: 0, duration: 0.9, stagger: 0.03 }, 0);
-    tl.fromTo(
-      hero.querySelector(".shamsa-star"),
-      { opacity: 0, scale: 0.9, transformOrigin: "50% 50%" },
-      { opacity: 1, scale: 1, duration: 0.55 },
-      0.25
-    );
-    tl.fromTo(hero.querySelector("[data-hero='ar']"), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45 }, 0.35);
+    tl.fromTo(hero.querySelector("[data-hero='ar']"), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45 }, 0);
     tl.fromTo(
       hero.querySelectorAll("[data-hero='title']"),
       { opacity: 0, y: 24 },
       { opacity: 1, y: 0, duration: 0.55, stagger: 0.08 },
-      0.45
+      0.15
     );
-    tl.fromTo(hero.querySelector("[data-hero='sub']"), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45 }, 0.75);
-    tl.fromTo(hero.querySelector("[data-hero='cta']"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4 }, 0.95);
-
-    var spin = hero.querySelector(".shamsa-spin");
-    if (spin) {
-      gsap.to(spin, { rotation: 360, transformOrigin: "100px 100px", duration: 90, repeat: -1, ease: "none" });
-    }
-    var glow = hero.querySelector(".shamsa-glow");
-    if (glow) {
-      gsap.to(glow, { opacity: 0.35, duration: 2.8, yoyo: true, repeat: -1, ease: "sine.inOut" });
+    tl.fromTo(hero.querySelector("[data-hero='sub']"), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45 }, 0.45);
+    tl.fromTo(hero.querySelector("[data-hero='cta']"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4 }, 0.65);
+    var visual = hero.querySelector("[data-hero='visual']");
+    if (visual) {
+      tl.fromTo(visual, { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.7 }, 0.2);
     }
   } else {
     document.querySelectorAll("[data-hero]").forEach(function (el) {
