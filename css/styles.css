@@ -1,16 +1,19 @@
 :root {
-  --ink: #121c18;
-  --ink-muted: #4a5c54;
-  --forest: #164a3c;
-  --forest-deep: #0b2a22;
-  --moss: #2a6b56;
-  --gold: #a8843d;
-  --gold-light: #d5b978;
-  --paper: #f2f5f1;
-  --paper-2: #e6ede7;
+  --ink: #0a1628;
+  --ink-muted: #4a5568;
+  --navy: #00183c;
+  --navy-deep: #000f28;
+  --forest: #00183c;
+  --forest-deep: #000f28;
+  --moss: #e06418;
+  --accent: #e06418;
+  --gold: #c8902c;
+  --gold-light: #e0b04a;
+  --paper: #f7f6f2;
+  --paper-2: #efece4;
   --white: #ffffff;
-  --line: rgba(11, 42, 34, 0.12);
-  --shadow: 0 24px 60px rgba(11, 42, 34, 0.1);
+  --line: rgba(0, 24, 60, 0.12);
+  --shadow: 0 24px 60px rgba(0, 15, 40, 0.12);
   --radius: 2px;
   --font-bn: "Noto Serif Bengali", serif;
   --font-display: "Cormorant Garamond", "Noto Serif Bengali", serif;
@@ -36,9 +39,9 @@ body {
   font-size: 1.0625rem;
   line-height: 1.75;
   background:
-    radial-gradient(ellipse 90% 55% at 0% -5%, rgba(168, 132, 61, 0.11), transparent 50%),
-    radial-gradient(ellipse 70% 45% at 100% 5%, rgba(42, 107, 86, 0.1), transparent 45%),
-    linear-gradient(180deg, var(--paper) 0%, #eef3ef 100%);
+    radial-gradient(ellipse 90% 55% at 0% -5%, rgba(200, 144, 44, 0.12), transparent 50%),
+    radial-gradient(ellipse 70% 45% at 100% 5%, rgba(224, 100, 24, 0.08), transparent 45%),
+    linear-gradient(180deg, var(--paper) 0%, #f0eee8 100%);
   min-height: 100vh;
 }
 
@@ -198,10 +201,10 @@ a:hover {
   overflow: hidden;
   color: var(--white);
   background:
-    linear-gradient(120deg, rgba(11, 42, 34, 0.96) 0%, rgba(22, 74, 60, 0.82) 42%, rgba(11, 42, 34, 0.5) 100%),
-    linear-gradient(180deg, transparent 35%, rgba(11, 42, 34, 0.88) 100%),
+    linear-gradient(120deg, rgba(0, 15, 40, 0.96) 0%, rgba(0, 24, 60, 0.84) 42%, rgba(0, 15, 40, 0.5) 100%),
+    linear-gradient(180deg, transparent 35%, rgba(0, 15, 40, 0.88) 100%),
     url("data:image/svg+xml,%3Csvg width='72' height='72' viewBox='0 0 72 72' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36 4 L40 28 L64 32 L40 36 L36 60 L32 36 L8 32 L32 28 Z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E"),
-    radial-gradient(circle at 72% 28%, #3a7a63 0%, #0b2a22 58%);
+    radial-gradient(circle at 72% 28%, #1a3a6e 0%, #000f28 58%);
 }
 
 .hero::before {
@@ -312,13 +315,13 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--gold);
-  color: var(--forest-deep);
+  background: var(--accent);
+  color: var(--white);
 }
 
 .btn-primary:hover {
-  background: var(--gold-light);
-  color: var(--forest-deep);
+  background: #c85410;
+  color: var(--white);
 }
 
 .btn-ghost {
@@ -606,7 +609,7 @@ a:hover {
   padding: 3.75rem 0 2.25rem;
   overflow: hidden;
   background:
-    linear-gradient(135deg, rgba(11, 42, 34, 0.04), transparent 50%),
+    linear-gradient(135deg, rgba(0, 24, 60, 0.04), transparent 50%),
     linear-gradient(180deg, var(--paper-2), transparent);
   border-bottom: 1px solid var(--line);
 }
