@@ -1137,6 +1137,11 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.footer-project {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+}
+
 .footer-bismillah {
   margin: 0;
   font-family: var(--font-ar);
@@ -1163,6 +1168,7 @@ a:hover {
 
 .footer-links a,
 .footer-contact a,
+.footer-project a,
 .footer-contact p {
   font-family: var(--font-ui);
   font-size: 0.9rem;
@@ -1172,7 +1178,8 @@ a:hover {
 }
 
 .footer-links a:hover,
-.footer-contact a:hover {
+.footer-contact a:hover,
+.footer-project a:hover {
   color: var(--gold-soft);
 }
 
