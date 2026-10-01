@@ -1284,6 +1284,13 @@ a:hover {
   }
 }
 
+@media (min-width: 981px) and (max-width: 1180px) {
+  .nav-links {
+    gap: 0.15rem 0.8rem;
+    font-size: 0.8125rem;
+  }
+}
+
 @media (min-width: 700px) and (max-width: 980px) {
   .card-grid,
   .people-grid,
